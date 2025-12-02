@@ -1,5 +1,7 @@
 package Djurrr;
-public class Hund extends Djur 
+
+
+public class Hund extends Djur implements Dressera 
 {
     public Hund ()
     {
@@ -19,6 +21,7 @@ public class Hund extends Djur
 
         if (this.energi <= 0)
         {
+            this.lever = false;
             System.out.println("Död");
         }
     }
@@ -29,7 +32,7 @@ public class Hund extends Djur
        return "Hunden skjäller";
     }
 
-    public static void Spåra(String mål)
+    public void Spåra(String mål)
     {
         if( mål == "kanin")
         {
@@ -37,4 +40,21 @@ public class Hund extends Djur
         }
     }
 
+    @Override
+    public void sitt()
+    {
+        System.out.println("Sitt");
+    }
+
+    @Override
+    public void apport()
+    {
+        System.out.println("apport");
+    }
+
+    @Override
+    public void kom()
+    {
+        System.out.println("kom");
+    }
 }

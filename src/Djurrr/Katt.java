@@ -32,7 +32,7 @@ public class Katt extends Djur {
         return "Miaooooooooo";
     }
 
-    public static void leka(String sak)
+    public void leka(String sak)
     {
         if(sak == "garn")
         {

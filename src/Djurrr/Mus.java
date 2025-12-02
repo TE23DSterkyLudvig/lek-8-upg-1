@@ -32,7 +32,7 @@ public class Mus extends Djur
         return "pip";
     }
 
-    public static void klättra()
+    public void klättra()
     {
         System.out.println("Mus klättrar");
     }
